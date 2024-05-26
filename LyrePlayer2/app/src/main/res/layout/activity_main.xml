@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+<Button
+    android:id="@+id/open_midi_file"
+    android:drawableStart="@drawable/ic_floder"
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:layout_gravity="center"
+    android:textAllCaps="false"
+    android:text="@string/open_midi_file"/>
+    <Button
+        android:id="@+id/open_float_list"
+        android:drawableStart="@drawable/ic_list"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/dkxflb"
+        android:textAllCaps="false"/>
+<Button
+    android:drawableStart="@drawable/ic_server"
+    android:id="@+id/select_from_server"
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:text="@string/zhaixianquku"
+    android:textAllCaps="false"/>
+</LinearLayout>

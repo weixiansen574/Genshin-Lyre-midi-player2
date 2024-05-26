@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+}
+
+def time = System.currentTimeMillis();
+
+android {
+    namespace 'top.weixiansen574.lyreplayer2'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "top.weixiansen574.lyreplayer2"
+        minSdk 24
+        targetSdk 34
+        versionCode 230507
+        //加上时间戳变换版本号，使得shizuku能更新代码
+        //versionName "2.3.5.7_${time}"
+        versionName "2.3.5.7"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+       /* ndk {
+            // 指定编译的abi架构
+            abiFilters "armeabi-v7a","arm64-v8a","x86_64","x86"
+        }*/
+        externalNativeBuild {
+            // cmake配置
+            cmake {
+                abiFilters "armeabi-v7a", 'arm64-v8a', 'x86', 'x86_64'
+                cppFlags "-std=c++17"
+                arguments '-DANDROID_TOOLCHAIN=clang', '-DANDROID_STL=c++_static'
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
+        aidl = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.alibaba:fastjson:1.2.79'
+    implementation "dev.rikka.shizuku:api:13.1.5"
+    implementation "dev.rikka.shizuku:provider:13.1.5"
+}

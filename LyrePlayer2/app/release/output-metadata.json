@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "top.weixiansen574.lyreplayer2",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 230507,
+      "versionName": "2.3.5.7",
+      "outputFile": "app-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

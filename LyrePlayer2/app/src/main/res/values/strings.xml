@@ -1,0 +1,133 @@
+<resources>
+    <string name="ok">@android:string/ok</string>
+    <string name="cancel">@android:string/cancel</string>
+    <string name="app_name">原神midi自动演奏器2</string>
+    <string name="error">错误</string>
+    <string name="developer">开发者：韦先森574</string>
+    <string name="about">关于</string>
+    <string name="open_midi_file">打开midi文件</string>
+    <string name="gang_qin_dui_ying_jian_wei_fan_wei">选择钢琴按键对应原神键位的范围</string>
+    <string name="row3">第三排</string>
+    <string name="row1">第一排</string>
+    <string name="black_key_processing_method">无效按键（例如普通琴不能弹到的黑键）处理方法</string>
+    <string name="cb1_text">相邻两键和弦</string>
+    <string name="cb2_text">取左边的按键</string>
+    <string name="cb3_text">取右边的按键</string>
+    <string name="cb4_text">不弹</string>
+    <string name="open_system_settings">前往设置自行打开开发者选项，再打开指针位置</string>
+    <string name="save_screen_coordinates">保存坐标</string>
+    <string name="transposition">移调：0</string>
+    <string name="analyze">分析\u0026选择</string>
+    <string name="run">运行与保存</string>
+    <string name="start_floating_window">启动悬浮窗</string>
+
+    <string name="got_it">知道了</string>
+    <string name="save_failed">保存失败！</string>
+    <string name="save_failed_msg">请填写完所有坐标再保存</string>
+    <string name="analyzing">分析中……</string>
+    <string name="analyzing_msg">正在分析移调后剩余的半音（黑键）数</string>
+
+    <string name="screen_coordinates">请输入按钮对应的屏幕坐标</string>
+    <string name="accessibility_service_description">免root点击屏幕的依赖，开启即可实现自动点击屏幕</string>
+    <string name="saved_successfully">保存成功！</string>
+
+    <string name="please_select_an_offset">请选择偏移量</string>
+    <string name="note_transposition">移调：%s</string>
+    <string name="file_data_is_corrupted">文件数据已损坏！</string>
+    <string name="black_quantity">黑键数：</string>
+    <string name="Error_coordinates_are_empty">错误：坐标为空</string>
+    <string name="Error_coordinates_are_empty_msg">请将所有坐标填写完并保存</string>
+    <string name="floating_window_permission_is_required">需要悬浮窗权限,请授予</string>
+    <string name="Accessibility_required">还需要无障碍权限</string>
+    <string name="Accessibility_required_msg">这是点击屏幕的必要权限\n请找到“原神midi自动演奏器”并打开，授权后重新点击启动悬浮窗即可启动\n程序关闭后需要重新开启，略烦请谅解！\n\n若出现无障碍权限已开启但还是重复提示要申请权限，请你在设置那使劲开关开关开……还不行请重启您的手机！</string>
+    <string name="Processing_MIDI_data">处理midi数据</string>
+    <string name="Processing_MIDI_data_msg">正在按照您的设置处理midi数据,请稍后…</string>
+    <string name="read_midi_success_and_track_quantity">读取midi成功！轨道数：</string>
+    <string name="End_of_performance">演奏结束！\n演奏by原神midi自动演奏器</string>
+    <string name="stops_running">已停止演奏</string>
+    <string name="Suspended_window_closed">悬浮窗已关闭</string>
+    <string name="file_mame_waning">警告：文件名称好像不正常！</string>
+    <string name="file_name_warning_message">为了保证文件名称能正常显示，请不要使用其他文件管理器选择文件！因为部分应用返回的URI不规范。\n文件名：%s\n不过文件名称不正常不影响运行</string>
+    <string name="filename">文件名：</string>
+    <string name="error_reading_MIDI">读取midi出错！</string>
+    <string name="exception_details">异常详情：</string>
+    <string name="qxsqsb">权限申请失败，您可以去设置自行打开！</string>
+    <string name="qsyccqx">请授予存储权限</string>
+    <string name="qsyccqx_msg_1">否则无法打开midi文件！\n</string>
+    <string name="qsyccqx_msg_2">不建议“仅在使用中允许”</string>
+    <string name="file_help">选择文件帮助</string>
+    <string name="show_help">查看帮助</string>
+    <string name="file_help_1">提示“无任何文件”别忙着用上面列出的文件管理器来选择文件！请点击点击右上角“…”，显示内部存储空间，才可列出手机存储里所有的文件</string>
+    <string name="file_help_2">显示内部存储空间后，点击左上角“☰”,选择你的设备内部存储，即可进入内部存储目录</string>
+    <string name="nmyxzwj">你没有选择文件</string>
+    <string name="nmyxzwj_msg">“无任何文件”？请查看帮助！</string>
+    <string name="stxzfmidiwj">试图选择非midi文件</string>
+    <string name="stxzfmidiwj_msg">您打开的文件不是midi文件，请重新选择！</string>
+    <string name="file_help_3">为了能够正常读出文件名字，若无特殊用途，请全程使用系统里的安卓的文件管理器（com.google.android.documentsui）来选择，不是你手机厂商开发的那个系统文件管理器！</string>
+    <string name="qdyscm">确定要删除吗？</string>
+    <string name="querengequ">请你确认歌曲，点击确定启动悬浮窗</string>
+    <string name="qxtzbf">请先停止演奏！</string>
+    <string name="xfcygb">悬浮窗已关闭，10秒后开始演奏，请把音乐听完！</string>
+    <string name="zzbf">正在演奏</string>
+    <string name="yzt">已暂停</string>
+    <string name="float_list">浮窗播放列表</string>
+    <string name="bcdfclb">保存到浮窗播放列表</string>
+    <string name="dkxflb">打开悬浮列表</string>
+    <string-array name="spinner_mapping_array">
+        <item>不演奏</item>
+        <item>第三排</item>
+        <item>第二排</item>
+        <item>第一排</item>
+    </string-array>
+    <!-- Strings used for fragments for navigation -->
+    <string name="previous">Previous</string>
+    <string name="search">搜索</string>
+    <string name="wfljzfwq">无法连接至服务器</string>
+    <string name="ckbz">查看帮助</string>
+    <string name="zhaixianquku">在线曲库</string>
+    <string name="wenjianguoda">文件过大！</string>
+    <string name="zgksc1mbwj">最高可上传1MB文件</string>
+    <string name="shangchuanzhong">上传中……</string>
+    <string name="mingchengbunengweikong">名称不能为空！</string>
+    <string name="mcbndy100gzf">名称不能大于100个字符！</string>
+    <string name="zzhqzxyy">正在获取最新音乐……</string>
+    <string name="dqwjsydyc">读取文件时遇到异常：</string>
+    <string name="qxzzcnbfdwj">\n请选择正常能播放的MIDI文件！</string>
+    <string name="tshbsyxdmidiwj">它似乎不是有效的midi文件，因为文件头信息不符，请检查你的文件是否正常，或者你选择的文件不是真正的midi文件</string>
+    <string name="loading_midi">加载midi中……</string>
+    <!--不喜勿喷，命名支持中文，以下将采用中文命名，无需翻译且对于中文第一语言的人更好见名知意-->
+    <string name="选择琴的种类">选择琴的种类</string>
+    <string name="风物之诗琴_镜花之琴">风物之诗琴、镜花之琴</string>
+    <string name="老旧的诗琴">老旧的诗琴</string>
+    <string name="空意图_需要一个文件URI">空意图，需要一个文件URI</string>
+    <string name="无法获取文件路径">无法获取文件路径</string>
+    <string name="设置音乐名称">设置音乐名称</string>
+    <string name="已根据您的屏幕分辨率_s_自动填写坐标">已根据您的屏幕分辨率：%s 自动填写坐标！（需自行保存）</string>
+    <string name="请输入你要保存的名称">请输入你要保存的名称</string>
+    <string name="文件名不能包含字符____"><![CDATA[文件名不能包含字符：/:*?<>|]]></string>
+    <string name="名称已存在">名称已存在</string>
+    <string name="是否覆盖同名音乐的文件及配置">是否覆盖同名音乐的文件及配置？</string>
+    <string name="_s_已保存到播放列表">%s  已保存到播放列表</string>
+    <string name="_s_保存失败">%s  保存失败</string>
+    <string name="根据文件头_这并不是一个正确的midi文件___您所选择的_s_">根据文件头，这并不是一个正确的midi文件，期望：4D 54 68 64，您所选择的：%s</string>
+    <string name="打开文件出错_s_">打开文件出错：%s</string>
+    <string name="错误_未指定文件Uri">错误，未指定文件Uri</string>
+    <string name="装逼模式启动">已隐藏播放器，10秒后开始演奏。请把音乐听完，否则请立即关闭应用后台！</string>
+    <string name="加载失败">加载失败</string>
+    <string name="错误_midi同时按下的键位太多_已超出10个的限制">错误：midi同时按下的键位太多，已超出10个的限制！</string>
+    <string name="读取midi数据时发生问题_弹起事件未对应按下事件">读取midi数据时发生问题：弹起事件未对应按下事件</string>
+    <string name="演奏结束">演奏结束！</string>
+    <string name="当前没有播放中的音乐">当前没有播放中的音乐</string>
+    <string name="音乐列表">音乐列表</string>
+    <string name="close">关闭</string>
+    <string name="选择音乐">选择音乐</string>
+    <string name="调整配置">调整配置</string>
+    <string name="启动失败">启动失败</string>
+    <string name="Shizuku服务未启动或未安装">Shizuku服务未启动或未安装，请先启动Shizuku服务。</string>
+    <string name="安装shizuku">安装shizuku</string>
+    <string name="打开shizuku">打开shizuku</string>
+    <string name="未获得shizuku权限_请到管理器启用本应用">未获得shizuku权限，请到管理器启用本应用</string>
+    <string name="正在连接shizuku服务">正在连接shizuku服务……</string>
+
+
+</resources>

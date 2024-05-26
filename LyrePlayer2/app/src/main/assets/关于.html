@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Markdown Renderer</title>
+    <script src="showdown.min.js"></script>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            border-bottom: 1px solid #d0d7deb3;
+            font-size: 2em;
+            padding-bottom: .3em;
+        }
+
+        h2 {
+            padding-bottom: .3em;
+            font-size: 1.5em;
+            border-bottom: 1px solid #d0d7deb3;
+        }
+
+        a {
+            color:#0969da;
+        }
+    </style>
+</head>
+
+<body>
+<div id="content"></div>
+<script>
+        function getQueryParam(param) {
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        let version = getQueryParam('version');
+        console.log(version)
+        var markdownContent = `
+
+# 原神midi自动演奏器
+## 当前版本
+${version}
+## 源码
+
+[https://github.com/weixiansen574/Genshin-Lyre-midi-player2](https://github.com/weixiansen574/Genshin-Lyre-midi-player2)
+
+## 作者
+
+[韦先森574](https://github.com/weixiansen574)
+
+## 我为什么要恢复更新
+是的，这个软件使用率就是很低的，只是一个游戏的附加小玩具，所以这项目我早停更了。
+当然恢复更新的最大原因是发现在shizuku提供的adb用户下可以使用
+
+Instrumentation.sendPointerSync(MotionEvent event);//效率低
+InputManager.injectInputEvent(MotionEvent event);
+
+这两种方法可以来实时操控屏幕，而不像无障碍服务需要预先画好路径再发给无障碍服务来执行滑动操作，导致滑动操作不能实时。
+这为免root实现远程屏幕协助提供了支持。
+此时原神突然更新了喇叭这一新乐器，原来的版本只能点击按键而不能按照midi音符的按下时间进行长按。
+所以恢复此项目用于研究与练手，为将来IPv6远程协助项目做铺垫
+
+当然因为之前屎山代码以及点击实现变换还有最重要的数据库结构大改的原因，2.x.x.x 新版将作为一个分支，新建一个包名，老版本演奏器可与此共存！
+
+
+#  ***
+
+文化输出，哈！输出的是糟粕吧！输出你最具文化自信之文字狱！国际服你也照搬国内一致的敏感词库，国外也阴魂不散！
+
+64位游戏不能发布包含"64"的文本，讽刺呢！计算机世界里经常出现的数字，怎么你了吗？！难道淘宝里卖个64GB的u盘会被违规关店吗？
+
+在国内恶心人可以理解，因为有监管要求。到了国外，没有那个政府要求你要审查用户文本，却依旧把国内的恶臭带出来，恶心玩家，可耻至极！
+
+![原神](原神.jpg)
+
+最招唾弃的迷你世界，他们屏蔽了吗？没有！而且还是中国大陆国内服！（讲个笑话，网易屏蔽了）
+
+![迷你世界](迷你世界.jpg)
+
+# 🖕🇯🇵
+
+还有日本人，面对中国特色文字狱，你们近乎沉默！日语Wikipedia上关于原神的争议部分，丝毫不提屏蔽词系统，只提到了那被和谐的4个角色。太棒了，这就是二次元发源地吗？！
+
+三种语言的原神wiki页，中文讲的最全面，争议部分还特地划分了一个词条，内容丰富，屏蔽词、被和谐的角色、玩家因昵称被封禁事件……，还贴心的配了一张图。English细讲了审查制度的指控，还有自我审查与那4个女角色，并且中文wiki很多的引用都来自英语。而日语只提到那四个女角色，之外Google日语搜索对原神屏蔽词系统的看法，搜索结果相对较少，且指控政治方面的更少，完全比不了中文和English的结果
+
+参见wiki
+
+- [原神相关争议](https://zh.wikipedia.org/wiki/%E5%8E%9F%E7%A5%9E%E7%9B%B8%E5%85%B3%E4%BA%89%E8%AE%AE)
+- [Genshin_Impact#Allegations_of_censorship](https://en.wikipedia.org/wiki/Genshin_Impact#Allegations_of_censorship)
+- [原神#批判・議論](https://ja.wikipedia.org/wiki/%E5%8E%9F%E7%A5%9E#%E6%89%B9%E5%88%A4%E3%83%BB%E8%AD%B0%E8%AB%96)
+
+`;
+
+
+        const converter = new showdown.Converter();
+        document.getElementById("content").innerHTML = converter.makeHtml(markdownContent);
+    </script>
+</body>
+
+</html>
